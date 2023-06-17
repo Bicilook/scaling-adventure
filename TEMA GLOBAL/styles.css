@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+  margin: 10;
+  padding: 10;
+}
+
+.item1 {
+  grid-area: uno;
+}
+
+.item2 {
+  grid-area: dos;
+}
+
+.item3 {
+  grid-area: tres;
+}
+
+.item4 {
+  grid-area: cuatro;
+}
+
+.item5 {
+  grid-area: cinco;
+}
+
+.item6 {
+  grid-area: seis;
+}
+
+.item7 {
+  grid-area: siete;
+}
+
+.item8 {
+  grid-area: ocho;
+}
+
+.item9 {
+  grid-area: nueve;
+}
+
+.item10 {
+  grid-area: diez;
+}
+.item11 {
+  grid-area: once;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "arribaizq arribacen arribacen arribacen arribacen arribader"
+    "uno dos tres cuatro cinco seis"
+    "siete siete ocho ocho nueve nueve"
+    "siete siete diez once doce trece"
+    "catorce quince rojo azul negro negro"
+    "morado morado morado morado negro negro";
+  gap: 10px;
+  background-color: rgb(193, 33, 33);
+  padding: 10px;
+  grid-template-rows: 100px 100px 200px 200px 200px 200px;
+}
+
+.grid-container > div {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
